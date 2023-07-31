@@ -1,0 +1,11 @@
+/* small-computer + */
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .flex-boxes {
+    padding: 0 50px;
+  }
+}
