@@ -8,49 +8,57 @@
     <link rel="stylesheet" href="styles/rwd/tablet.css" />
     <link rel="stylesheet" href="styles/rwd/small-computer.css" />
     <link rel="stylesheet" href="styles/rwd/computer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Projekt 2</title>
+    <title>Projekt 1</title>
   </head>
 
-  <body>
-    <nav>
+  <body class="body">
+    <nav class="nav">
       <div class="container">
         <div class="body-container">
           <p>Moja Firma</p>
         </div>
         <ul class="nav-button">
-          <li><a href="" class="links">O nas</a></li>
-          <li><a href="" class="links">Oferta</a></li>
-          <li class="disabled-button"><a href="" class="links">Kontakt</a></li>
+          <li><a href="#about" class="links">O nas</a></li>
+          <li><a href="#offer" class="links">Oferta</a></li>
+          <li><a href="" class="links disabled-button">Kontakt</a></li>
         </ul>
       </div>
     </nav>
 
-    <header>
-      <img src="./zdjecie1.jpg" alt="" />
-      <div class="shadow container-tiny">
-        <div class="container-main">
+    <header class="header">
+      <img class="img" src="images/zdjecie1.jpg" alt="" />
+      <div class="shadow">
+        <div class="header-content container-tiny">
           <h1 class="header-main">
             Nasza firma oferuje najwyższej jakości produkty.
           </h1>
           <p class="text-paragraph">Nie wierz nam na słowo - sprawdź</p>
-          <button class="button">Oferta</button>
+          <a href="#offer" class="offer-button">Oferta</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="experts-section">
-        <div class="container-expert">
+      <section id="about" class="experts-section">
+        <div class="container">
           <h2 class="experts-header">Nasi specjaliści</h2>
           <ul class="experts-list">
             <li class="expert">
-              <img src="./mezczyzna.jpg" alt="Krzysztof Bąk" />
+              <img
+                src="images/mezczyzna.jpg"
+                alt="Zdjecie przedstawiajace pracownika Krzysztof Bąk"
+              />
               <div class="expert-info">
                 <h3>Krzysztof Bąk [dział IT]</h3>
                 <p>
@@ -62,9 +70,12 @@
                 </p>
               </div>
             </li>
-            <li class="expert reversed">
-              <img src="kobieta.jpg" alt="Katarzyna Ogórek" />
-              <div class="expert-info">
+            <li class="expert">
+              <img
+                src="images/kobieta.jpg"
+                alt="Zdjecie przedstawiajace pracownika Katarzyna Ogórek"
+              />
+              <div class="expert-info expert-info-right">
                 <h3>Katarzyna Ogórek[Dział ksiegowośći]</h3>
                 <p>
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -79,13 +90,13 @@
         </div>
       </section>
 
-      <section class="flex">
-        <div class="container-flex">
-          <h2 class="header1">Czym zajmuje się nasza firma?</h2>
+      <section id="offer" class="offer">
+        <div class="container">
+          <h2 class="offer-section-title">Czym zajmuje się nasza firma?</h2>
           <div class="flex-boxes">
             <div class="box">
               <h3>Usługa 1</h3>
-              <p class="box2">(nowość)</p>
+              <p class="new-offer">(nowość)</p>
               <div class="circle"></div>
             </div>
             <div class="box">Usługa 2</div>
@@ -98,12 +109,14 @@
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <p>Nazwa firmy - wszelkie prawa zastrzeżone, 2019</p>
+        <p class="footer-text-paragraph">
+          Nazwa firmy - wszelkie prawa zastrzeżone, 2019
+        </p>
         <div class="icons">
-          <img class="logo" src="/instagram.svg" alt="Instagram logo" />
-          <img class="logo" src="/facebook-logo.png" alt="Facebook logo" />
+          <i class="fab fa-brands fa-instagram fa-2x"></i>
+          <i class="fab fa-facebook-square fa-2x"></i>
         </div>
       </div>
     </footer>
