@@ -22,8 +22,10 @@
 
   .box {
     width: 337px;
-    height: 329px;
+    height: auto;
     margin: 0 auto;
+    flex-shrink: 1;
+    aspect-ratio: 1 / 1;
   }
 
   .box:hover {
@@ -81,6 +83,7 @@
   }
   .footer-text-paragraph {
     margin-top: 30px;
+    text-align: center;
   }
   .icons {
     padding-bottom: 30px;
